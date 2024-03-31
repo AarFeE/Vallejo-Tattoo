@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/892aefaa85.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="multimedia/logo.svg">
+    <title>Vallejo Tattoo</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="bg"></div>
+        <nav class="header-nav">
+            <figure class="nav-element header-logo">
+                <div></div>
+                <img src="multimedia/logo.svg" alt="Logo">
+            </figure>
+            <ul class="nav-element navbar">
+                <a class="button-nav" href="">
+                    <li>Galeria</li>
+                </a>
+                <a class="button-nav" href="#about-me">
+                    <li>Sobre Mi</li>
+                </a>
+                <a class="button-nav" href="#contact">
+                    <li>Contacto</li>
+                </a>
+            </ul>
+            <figure class="sidebar-btn menu">
+                <img onclick="showSidebar()" src="multimedia/header/menu.svg" alt="Close">
+            </figure>
+            <ul class="sidebar">
+                <li class="close">
+                    <figure class="sidebar-btn close">
+                        <img onclick="closeSidebar()" src="multimedia/header/close.svg" alt="Close">
+                    </figure>
+                </li>
+                <a class="button-nav" href="">
+                    <li>Galeria</li>
+                </a>
+                <a class="button-nav" href="#about-me">
+                    <li>Sobre Mi</li>
+                </a>
+                <a class="button-nav" href="#contact">
+                    <li>Contacto</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main-title">
+            <h1><span class="span-1">VALLEJO TATTO</span> <br />
+                <span class="span-2">STUDIO</span></h1>
+        </section>
+
+        <section class="gallery">
+            <a class="title h2" href="">
+                <h2 class="span-1">Galeria</h2>
+            </a>
+            <article class="gallery-grid">
+                <figure class="grid-element grid-1"><img src="multimedia/main/grid-1.jpg" alt=""></figure>
+                <figure class="grid-element grid-2"><img src="multimedia/main/grid-2.png" alt=""></figure>
+                <figure class="grid-element grid-3"><img src="multimedia/main/grid-3.jpg" alt=""></figure>
+                <figure class="grid-element grid-4"><img src="multimedia/main/grid-4.jpg" alt=""></figure>
+                <figure class="grid-element grid-5"><img src="multimedia/main/grid-5.png" alt=""></figure>
+            </article>
+        </section>
+
+        <hr id="about-me" />
+
+        <section class="about-me">
+            <figure class="about-stuff">
+                <img src="multimedia/main/malga-photo.png" alt="Tattoer">
+            </figure>
+            <div class="about-me-text about-stuff">
+                <h2 class="title h2 span-1">Sobre Mi</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error est dolor soluta cumque consequatur
+                    temporibus, distinctio dicta alias perspiciatis fugiat laboriosam natus quidem iusto sunt omnis
+                    nulla similique sapiente. Ab!
+                    Dolore omnis eum doloribus molestias tempora nisi aliquam nesciunt vel, quisquam quas recusandae aut
+                    distinctio? Qui animi est assumenda omnis quas dolorem, eveniet et cumque aliquam debitis quaerat
+                    magnam similique?
+                    Quisquam repellendus, quas aliquam, voluptas rem consequatur officia, dolorum iusto rerum
+                    praesentium accusamus consectetur! Distinctio fuga quae inventore at nam maiores dolores praesentium
+                    doloremque, doloribus commodi, fugit, quos deserunt similique?
+                    Impedit, corrupti voluptates perferendis eum debitis atque quis. Quo accusantium dicta soluta
+                    incidunt eveniet mollitia impedit, libero deserunt tempora ipsam quasi nesciunt velit nihil!
+                    Voluptas numquam repellendus esse nostrum eligendi.</p>
+            </div>
+        </section>
+
+        <hr id="contact" />
+
+        <section class="contact-info">
+            <h2 class="title h2 span-1">Informacion de Contacto</h2>
+            <article class="info-labels">
+                <div>
+                    <h3 class="title info-labels-element span-2">Correo: </h3>
+                    <p class="info-labels-element">vallejotattoo@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="title info-labels-element span-2">Celular: </h3>
+                    <p class="info-labels-element">+57 333 333 3333</p>
+                </div>
+                <div>
+                    <h3 class="title info-labels-element span-2">Direccion: </h3>
+                    <p class="info-labels-element">Cl 69 # 4 - 20</p>
+                </div>
+                <div>
+                    <h3 class="title info-labels-element span-2">Ciudad: </h3>
+                    <p class="info-labels-element">Riosucio - Caldas</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="footer-btns">
+            <li class="footer-btn"><a href=""><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i></a></li>
+            <li class="footer-btn"><a href=""><i class="fa-brands fa-instagram" style="color: #ff80c0;"></i></a></li>
+            <li class="footer-btn"><a href=""><i class="fa-brands fa-square-facebook" style="color: #004080;"></i></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function closeSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';
+        }
+
+        function showSidebar() {
+            var sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'flex';
+        }
+    </script>
+</body>
+
+</html>
